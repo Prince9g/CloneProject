@@ -1,34 +1,21 @@
 import React from 'react'
-import { PiHouseLight, PiX } from "react-icons/pi"
+import { PiHouseLight} from "react-icons/pi"
 import { FaDollarSign } from "react-icons/fa";
 import { IoBookOutline } from "react-icons/io5";
 import './style/services.css'
 
 const style={width:"100px", height:"100px"}
-const style2={color:"black", fontSize:"16px"}
-
+const style2={color:"rgb(99,99,99)", fontSize:"16px"}
 var style3={backgroundColor:"#14355e",  color:"white"}
 
 const Services = () => {
-  const arrowRef = React.useRef(null);
-
-const handleMouseEnter = () => {
-    if (arrowRef.current) {
-        arrowRef.current.style.transform = "rotate(360deg)";
-    }
-};
-
-const handleMouseLeave = () => {
-    if (arrowRef.current) {
-        arrowRef.current.style.transform = "rotate(45deg)";
-    }
-};
   return (
-    <div className="numbers services">
+    <div className="container">
+      <div className="numbers services">
       <p>OUR SERVICES</p>
-      <h1 >We Offer a Range of Remodeling</h1>
-      <h1>Services to Meet Every Need</h1>
-      <div className="cards" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+      <h1 data-aos="slide-right" data-aos-easing="ease-in-sine" data-aos-duration="400">We Offer a Range of Remodeling</h1>
+      <h1 data-aos="slide-right" data-aos-easing="ease-in-sine" data-aos-duration="500">Services to Meet Every Need</h1>
+      <div className="cards" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="500">
         <div className="card">
         <div className="icons" ><PiHouseLight style={style}/></div>
             <h2>REAL ESTATE</h2>
@@ -47,8 +34,58 @@ const handleMouseLeave = () => {
             <p style={style2}>Experience expert portfolio management tailored for optimal growth and risk management. Our strategies focus on diversification, asset allocation, and continuous monitoring to maximize returns, helping you achieve your financial objectives.</p>
         </div>
         </div>
-        <a className='contact' style={style3} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Get Interest<div className="arrow" ref={arrowRef}> →</div></a>
-        
+        <a className='contact' style={style3} >All Services<div className="arrow"> →</div></a>
+      </div>
+      
+        <div className="projects-images">
+        <div className="images-slider">
+        <div className="image">
+                <a><img src="https://static.wixstatic.com/media/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.png/v1/fill/w_614,h_461,q_90/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.webp"></img></a>
+                <div className="button-hover">
+                    <div>
+                        <h3>Godrej Vrikshya</h3>
+                        <button>Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div className="image">
+                <a><img src="https://static.wixstatic.com/media/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.png/v1/fill/w_614,h_461,q_90/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.webp"></img></a>
+                <div className="button-hover">
+                    <div>
+                        <h3>Godrej Vrikshya</h3>
+                        <button>Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div className="image">
+                <a><img src="https://static.wixstatic.com/media/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.png/v1/fill/w_614,h_461,q_90/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.webp"></img></a>
+                <div className="button-hover">
+                    <div>
+                        <h3>Godrej Vrikshya</h3>
+                        <button>Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div className="image">
+                <a><img src="https://static.wixstatic.com/media/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.png/v1/fill/w_614,h_461,q_90/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.webp"></img></a>
+                <div className="button-hover">
+                    <div>
+                        <h3>Godrej Vrikshya</h3>
+                        <button>Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div className="image">
+                <a><img src="https://static.wixstatic.com/media/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.png/v1/fill/w_614,h_461,q_90/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.webp"></img></a>
+                <div className="button-hover">
+                    <div>
+                        <h3>Godrej Vrikshya</h3>
+                        <button>Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
 
 </div>
   )

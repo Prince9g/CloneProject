@@ -12,22 +12,24 @@ body::-webkit-scrollbar{
     align-items: center;
 }
 .brands{
-    background-color:rgba(158, 159, 160, 0.6);
+    position: relative;
+    background-color:rgba(158, 159, 160, 0.7);
     width:100%;
-    height:250px;
+    height:300px;
     display:flex;
     justify-content: center;
 }
 .brands .background{
     position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
     z-index:-1;
-    /* mix-blend-mode:color-burn; */
-    width:100%;
-    height:250px;
+    mix-blend-mode:lighten;
+    width:90%;
+    height:300px;
 }
 .brands-scroll{
-    /* margin-left:10px;
-    margin-right:10px; */
     display:flex;
     align-items: center;
     background-color: transparent;
@@ -58,6 +60,6 @@ body::-webkit-scrollbar{
     border-radius: 50%;
     margin-right:30px;
 }
-.brand-image:hover{
+.brands-scroll .brand-image:hover{
     mix-blend-mode: exclusion;
 }

@@ -1,28 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/navbar'
-import Home from './components/home';
-import Partners from './components/partners'
-import About from './components/about'
-import Numbers from './components/numbers'
-import Projects  from './components/projects'
-import Services from'./components/services'
-import Footer from './components/footer'
-
-
+import React from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import HomePage from './components/homePage'
+import Footer from './components/footer';
+import ServicesPage from './components/services-page';
+import Navbar2 from './components/navbar2'
+import BrandsPage from './components/BrandsPage'
 
 function App() {
+  React.useEffect(()=>{
+    Aos.init({duration:1000, once:true});
+},[])
   return (
-    <div className="App" id="Home">
-      <Navbar/>
-      <Home/>
-      <Partners/>
-      <About/>
-      <Numbers/>
-      <Projects/>
-      <Services/>
+    <div className="App">
+      {/* <HomePage/> */}
+      {/* <Navbar2/>
+      <ServicesPage/> */}
+      <BrandsPage/>
       <Footer/>
-    </div>
+    </div> 
   );
 }
 

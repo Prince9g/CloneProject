@@ -1,0 +1,98 @@
+.Brands-page-heading h1{
+    font-size: 65px;
+    font-weight: 600;
+    text-align: left;
+    margin-left:20px;
+    margin-bottom:40px;
+}
+.Brands-page-heading p{
+    font-size: 22px;
+    font-weight: 400;
+    text-align: left;
+    margin-left:20px;
+}
+
+
+.Brandss{
+    width:96%;
+    background-color:#14355e ;
+    padding:2%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.Brandss .brand-image{
+    margin:0px;
+    margin-top:20px;
+    width:200px;
+    height:auto;
+}
+.container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.relationships{
+    margin-top:30px;
+    width:90%;
+    display:flex;
+    justify-content: space-between;
+    height:fit-content;
+    /* gap:30px; */
+
+}
+.relationships img{
+    width:700px;
+    height:auto;
+}
+.relationships .Brands-content{
+    width:40%;
+    display:flex;
+    flex-direction: column;
+    align-items:start;
+    gap:20px;
+    justify-content: space-between;
+}
+.relationships .Brands-content .sub{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items:start;
+    gap:20px;
+}
+.relationships .Brands-content h1{
+    width:70%;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: left;
+}
+.relationships .Brands-content p{
+    width:70%;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+}
+.relationships .Brands-content a{
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 16px;
+    font-weight:100;
+    transition: 0.2s ease-in-out;
+    border:1px solid black;
+    /* margin-bottom: 50px; */
+}
+.relationships .Brands-content a:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.relationships .Brands-content .images img{
+    width:33%;
+    height:auto;
+}

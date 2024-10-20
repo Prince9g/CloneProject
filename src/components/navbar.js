@@ -1,6 +1,7 @@
 import React, { useRef , useState, useEffect} from 'react'
 import icon from './Untitled design (23)_edited.webp'
 import './style/navbar.css'
+import './style/navbar2.css'
 
 
 
@@ -38,20 +39,6 @@ export default function Navbar() {
     };
 }, [])
 
-    const arrowRef = useRef(null);
-
-    const handleMouseEnter = () => {
-        if (arrowRef.current) {
-            arrowRef.current.style.transform = "rotate(360deg)";
-        }
-    };
-
-    const handleMouseLeave = () => {
-        if (arrowRef.current) {
-            arrowRef.current.style.transform = "rotate(45deg)";
-        }
-    };
-
   return (
     <div className="navbar" ref={navRef}>
         <div className='icon'>
@@ -63,7 +50,7 @@ export default function Navbar() {
         <a className='list-item'>PROJECTS</a>
         <a className='list-item'>ABOUT US</a>
         <a className='list-item'>BRANDS</a>
-        <a className='contact' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Contact us<div className="arrow"  ref={arrowRef}> →</div></a>
+        <a className='contact' >Contact us<div className="arrow" > →</div></a>
       </div>
     </div>
   )

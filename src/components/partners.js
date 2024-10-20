@@ -8,7 +8,6 @@ function Partners() {
     var numbers=[1,2,3,4,5,6,7,8,9,10,2,3,3,2,3,211,3,2];
     return (
         <div className="partners">
-            
             <div className="heading">
                 <h2>OUR PARTNERS</h2>
                 <p>We believe every client is a valuable long-term partner.</p>

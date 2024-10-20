@@ -56,10 +56,13 @@
     background-color: white;
     color:black;
 }
-.arrow{
+
+.contact .arrow{
     font-size: 25px;
     display:inline-block;
-    /* position: relative; */
-    transition: transform 0.1s ease-in-out;
+    transition:  0.2s ease-in-out;
     transform: rotate(45deg);
+}
+.contact:hover .arrow{
+    transform: rotate(360deg);
 }

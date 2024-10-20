@@ -4,19 +4,6 @@ import './style/home.css'
 import './style/navbar.css'
 
 function Home() {
-    const arrowRef = useRef(null);
-
-    const handleMouseEnter = () => {
-        if (arrowRef.current) {
-            arrowRef.current.style.transform = "rotate(360deg)";
-        }
-    };
-
-    const handleMouseLeave = () => {
-        if (arrowRef.current) {
-            arrowRef.current.style.transform = "rotate(45deg)";
-        }
-    };
     var style={backgroundColor:"white",  color:"black"}
   return (
     <>
@@ -27,7 +14,7 @@ function Home() {
             <div className="content">
                 <h1>Empowering Your Real Estate and Financial Future</h1>
                 <p>Empowering Your Real Estate and Financial Future</p>
-                <a className='contact' style={style} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Get Interest<div className="arrow" ref={arrowRef}> →</div></a>
+                <a className='contact' style={style} >Get Interest<div className="arrow"> →</div></a>
             </div>
         </div>
     </div>
