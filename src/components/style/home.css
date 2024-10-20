@@ -10,6 +10,7 @@
 #video-page{
     background-color: rgba(0,0,0,0.4);
     margin:0px;
+    padding-bottom: 56.25%;
     width:100%;
     height: auto;
     position:absolute;
@@ -38,6 +39,7 @@
     animation-fill-mode: forward;
     width:50%;
 }
+
 @keyframes content-animation {
     0%{
         margin-left:-200%;
@@ -52,4 +54,20 @@
 .content p{
     font-size: 20px;
     font-weight: 800;
+}
+
+@media (max-width:900px){
+    .media-flex-col{
+        /* background-color: rgb(41, 40, 39); */
+        flex-direction: column;
+        align-items:center;
+        gap:30px !important;
+    }
+    .media-width-100{
+        /* display:block; */
+        width:90% !important;
+    }
+    .media-height-fit{
+        height:fit-content !important;
+    }
 }

@@ -1,0 +1,70 @@
+.header {
+    background-color: #cbd5e1; /* Corresponds to Tailwind's slate-300 */
+    height: 16rem; /* Equivalent to h-64 */
+    padding: 1.5rem 0; /* Equivalent to p-6 */
+}
+
+.header-text {
+    text-align: left;
+    font-size: 1rem; /* Corresponds to text-1xl */
+    font-weight: 600; /* Equivalent to font-semibold */
+    margin-left: 2.5rem; /* Equivalent to ml-10 */
+}
+
+.header-title {
+    text-align: left;
+    font-size: 3rem; /* Default for larger screens */
+    font-weight: 600;
+    margin-left: 2.5rem;
+    padding: 1.25rem 0; /* Equivalent to p-5 */
+}
+
+@media screen and (min-width: 640px) {
+    .header-title {
+        font-size: 3.125rem; /* Equivalent to sm:text-5xl */
+    }
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.grid-container {
+    width:90%;
+    display: grid;
+    grid-template-rows: repeat(5, minmax(0, 1fr)); /* grid-rows-5 */
+    grid-auto-flow: column;
+}
+
+@media screen and (min-width: 640px) {
+    .grid-container {
+        grid-template-rows: repeat(3, minmax(0, 1fr)); /* sm:grid-rows-3 */
+    }
+}
+
+.project {
+    margin: 1.25rem; /* Equivalent to m-5 */
+    overflow: hidden;
+    /* border-radius:1rem ; */
+}
+.project  div{
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.project-image {
+    border-radius: 1rem; /* Equivalent to rounded-2xl */
+    width: 100%;
+    height: auto;
+    transition: 0.3s ease-in-out;
+    /* overflow: hidden; */
+}
+.project-image:hover{
+    transform:scale(1.2);}
+
+.project-title {
+    text-align: left;
+    font-size: 1.25rem; /* Equivalent to text-xl */
+    margin: 0.5rem; /* Equivalent to m-2 */
+    padding: 0.5rem; /* Equivalent to p-2 */
+}
+

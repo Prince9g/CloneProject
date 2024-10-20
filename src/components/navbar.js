@@ -1,60 +1,60 @@
-import React, { useRef , useState, useEffect} from 'react'
-import icon from './Untitled design (23)_edited.webp'
-import './style/navbar.css'
-import './style/navbar2.css'
-
-
+import React, { useRef, useState, useEffect } from "react";
+import icon from "./Untitled design (23)_edited.webp";
+import "./style/navbar.css";
+import "./style/navbar2.css";
 
 export default function Navbar() {
+  const navRef = useRef(null);
+  let lastScrollTop = 0;
+  console.log(navRef.current);
 
-   const navRef=useRef(null);
-   let lastScrollTop=0;
-   console.log(navRef.current)
-
-   function handleScroll(){
+  function handleScroll() {
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
-    
-    if(lastScrollTop<scrollTop && scrollTop>200){
-      navRef.current.style.display="none";
-    }
-    else if(lastScrollTop>scrollTop){
-      navRef.current.style.display="flex";
-    }
-      if(window.scrollY<100){
-        navRef.current.style.backgroundColor="transparent";
-      }
-      else{
-        navRef.current.style.backgroundColor="#14355e";
-      }
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-   }
 
+    if (lastScrollTop < scrollTop && scrollTop > 200) {
+      navRef.current.style.display = "none";
+    } else if (lastScrollTop > scrollTop) {
+      navRef.current.style.display = "flex";
+    }
+    if (window.scrollY < 100) {
+      navRef.current.style.backgroundColor = "transparent";
+    } else {
+      navRef.current.style.backgroundColor = "#14355e";
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  }
 
-   useEffect(() => {
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    
+
     // Cleanup event listener on component unmount
     return () => {
-        window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-}, [])
+  }, []);
 
   return (
     <div className="navbar" ref={navRef}>
-        <div className='icon'>
-            <a href="#home"><img src={icon}/></a>
-        </div>
-      <div className='navbar-list'>
-        <a className='list-item'>HOME</a>
-        <a className='list-item'>SERVICES</a>
-        <a className='list-item'>PROJECTS</a>
-        <a className='list-item'>ABOUT US</a>
-        <a className='list-item'>BRANDS</a>
-        <a className='contact' >Contact us<div className="arrow" > →</div></a>
+      <input type="checkbox" id="check" />
+
+      <label for="check" className="checkbtn">
+        <i className="fas fa-bars"></i>
+      </label>
+      <div className="icon">
+        <a href="#home">
+          <img src={icon} />
+        </a>
+      </div>
+      <div className="navbar-list">
+        <a className="list-item">HOME</a>
+        <a className="list-item">SERVICES</a>
+        <a className="list-item">PROJECTS</a>
+        <a className="list-item">ABOUT US</a>
+        <a className="list-item">BRANDS</a>
+        <a className="contact">
+          Contact us<div className="arrow"> →</div>
+        </a>
       </div>
     </div>
-  )
-
+  );
 }
-
-
