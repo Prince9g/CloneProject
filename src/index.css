@@ -1091,3 +1091,193 @@ body{
   }
   
 
+/* About Us Section */
+
+.about-container {
+    margin: 20px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 20px;
+}
+
+.about-text {
+    width: 100%;
+    margin: 10px;
+    letter-spacing: 2px;
+}
+
+.about-header, .about-subheader, .about-description {
+    padding: 10px;
+}
+
+.about-header {
+    font-size: 18px;
+}
+
+.about-subheader {
+    font-size: 48px;
+}
+
+.about-description {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.about-img {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+/* Container for each section */
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+/* Margin styling */
+.sm\:m-9 {
+    margin: 2rem;
+}
+
+.m-5 {
+    margin: 1.25rem;
+}
+
+/* Font styling */
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+/* Image styling */
+.image-style {
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    width: 100%;
+    height: auto;
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+}
+
+.grid-rows-2 {
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.sm\:grid-rows-1 {
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.grid-flow-col {
+    grid-auto-flow: column;
+}
+
+/* Grid item spacing */
+.gap-4 {
+    gap: 1rem;
+}
+
+/* Margin for images and other components */
+.sm\:m-7 {
+    margin: 1.75rem;
+}
+
+.m-3 {
+    margin: 0.75rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+/* Spacing between elements */
+.sm\:mb-5 {
+    margin-bottom: 1.25rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+/* To set different styles for the larger image */
+.col-span-2 {
+    grid-column: span 2;
+}
+
+
+.mission-text, .why-us-text {
+    margin: 20px;
+}
+
+.mission-header, .why-us-header {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.mission-description, .why-us-description {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonial-header {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.testimonial-box {
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #222;
+}
+
+.testimonial-stars {
+    color: yellow;
+}
+
+.testimonial-text {
+    margin: 20px 0;
+}
+
+.testimonial-name {
+    font-weight: 600;
+}
+
+.testimonial-location {
+    color: #888;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-grid, .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

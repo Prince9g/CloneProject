@@ -9,6 +9,7 @@ import BrandsPage from './components/BrandsPage'
 import ProjectsPage from './components/Project-page';
 import Career from './components/Career';
 import Events from './components/Events';
+import AboutUs from './components/AboutUs';
 
 function App() {
   React.useEffect(()=>{
@@ -28,6 +29,7 @@ function App() {
       {page==="events"?<Events changePage={changePage}/>:<></>}
       {page==="brands"?< BrandsPage changePage={changePage}/>:<></>}
       {page==="projects"?<ProjectsPage changePage={changePage}/>:<></>}
+      {page==="about"?<AboutUs changePage={changePage}/>:<></>}
       <Footer/>
     </div> 
   );
