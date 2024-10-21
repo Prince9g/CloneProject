@@ -2,7 +2,7 @@ import React, {useRef} from 'react'
 
 const About = () => {
     const arrowRef = useRef(null);
-    var style={backgroundColor:"#14355e",  color:"white"}
+    var style={backgroundColor:"#006644",  color:"white"}
   return (
     <div className="about ">
         <div className="about-company media-flex-col media-width-100">

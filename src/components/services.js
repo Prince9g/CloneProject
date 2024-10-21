@@ -4,22 +4,22 @@ import { FaDollarSign } from "react-icons/fa";
 import { IoBookOutline } from "react-icons/io5";
 
 const style = { width: "100px", height: "100px" };
-const style2 = { color: "rgb(99,99,99)", fontSize: "16px" };
-var style3 = { backgroundColor: "#14355e", color: "white" };
+const style2 = { color: "white", fontSize: "16px" };
+var style3 = { backgroundColor: "#006644", color: "white" };
 
 const Services = () => {
   return (
     <div className="container">
       <div className="numbers services">
         <p>OUR SERVICES</p>
-        <h1
+        <h1 style={{fontSize: "40px"}}
           data-aos="slide-right"
           data-aos-easing="ease-in-sine"
           data-aos-duration="400"
         >
           We Offer a Range of Remodeling
         </h1>
-        <h1
+        <h1 style={{fontSize: "40px"}}
           data-aos="slide-right"
           data-aos-easing="ease-in-sine"
           data-aos-duration="500"
@@ -42,7 +42,7 @@ const Services = () => {
               Discover premium real estate projects offering luxury, comfort,
               and modern amenities. Invest in thoughtfully designed spaces that
               blend elegance with convenience, located in prime areas, ensuring
-              excellent connectivity.
+              excellent connectivity.
             </p>
           </div>
           <div className="card media-width-100 media-height-fit">

@@ -4,10 +4,11 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import HomePage from './components/homePage'
 import Footer from './components/footer';
-import ServicesPage from './components/services-page';
 import Navbar2 from './components/navbar2'
 import BrandsPage from './components/BrandsPage'
 import ProjectsPage from './components/Project-page';
+import Career from './components/Career';
+import Events from './components/Events';
 
 function App() {
   React.useEffect(()=>{
@@ -23,7 +24,8 @@ function App() {
     <div className="App">
       {page==="home"?<HomePage changePage={changePage}/>:<></>}
       {page!=="home"?<Navbar2 changePage={changePage} underline={page}/>:<></>}
-      {page==="services"?<ServicesPage changePage={changePage}/>:<></>}
+      {page==="services"?<Career changePage={changePage}/>:<></>}
+      {page==="events"?<Events changePage={changePage}/>:<></>}
       {page==="brands"?< BrandsPage changePage={changePage}/>:<></>}
       {page==="projects"?<ProjectsPage changePage={changePage}/>:<></>}
       <Footer/>

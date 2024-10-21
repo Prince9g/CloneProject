@@ -15,7 +15,7 @@ const Projects = () => {
             arrowRef.current.style.transform = "rotate(45deg)";
         }
     };
-    var style={backgroundColor:"#14355e",  color:"white"}
+    var style={backgroundColor:"#006644",  color:"white"}
   return (
     <div className="projects">
         <div className="projects-header">

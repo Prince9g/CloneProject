@@ -20,7 +20,8 @@ const Navbar2 = (props) => {
         </div>
         <div className={`navbar-list ${showLinks ? "show" : ""}`}>
           <a className="list-item" style={props.underline==='home'? style:{}} onClick={()=> props.changePage('home')}>HOME</a>
-          <a className="list-item" style={props.underline==='services'? style:{}} onClick={() => { props.changePage('services'); toggleNavbar();}}>SERVICES</a>
+          <a className="list-item" style={props.underline==='services'? style:{}} onClick={() => { props.changePage('services'); toggleNavbar();}}>CAREER</a>
+          <a className="list-item" style={props.underline==='services'? style:{}} onClick={() => { props.changePage('events'); toggleNavbar();}}>EVENTS</a>
           <a className="list-item" style={props.underline==='projects'? style:{}} onClick={() => { props.changePage('projects'); toggleNavbar();}}>PROJECTS</a>
           <a className="list-item" style={props.underline==='about'? style:{}} onClick={() => { props.changePage('about'); toggleNavbar();}}>ABOUT US</a>
           <a className="list-item" style={props.underline==='brands'? style:{}} onClick={() => { props.changePage('brands'); toggleNavbar();}}>BRANDS</a>

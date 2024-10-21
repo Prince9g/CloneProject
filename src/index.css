@@ -35,7 +35,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
-    background-color: #14355e;
+    background-color: #006644;
     color: white;
     position: fixed;
     width: 90%;
@@ -81,7 +81,7 @@ body{
         height:fit-content;
         flex-direction: column;
         gap:30px;
-        background-color:#14355e ;
+        background-color:#006644;
         position: absolute;
         top: 100px;
         width:100%;
@@ -149,7 +149,7 @@ body{
 #navbar2{
     margin-bottom:30px;
     position:relative;
-    background-color: #14355e;
+    background-color: #006644;
     background-attachment: fixed;
 }
 
@@ -352,7 +352,7 @@ body{
     flex:1;
     padding:20px;
     width:450px;
-    background-color: #14355e;
+    background-color: #006644;
     color: white;
     display:flex;
     flex-direction: column;
@@ -447,7 +447,7 @@ body{
     font-size: 2rem;
     color:white;
     border:1px solid white;
-    background-color: #14355e;
+    background-color: #006644;
     padding:5px;
     padding-left:15px;
     padding-right: 15px;
@@ -586,7 +586,7 @@ body{
 
 .Brandss{
     width:96%;
-    background-color:#14355e ;
+    background-color:#006644;
     padding:2%;
     display:flex;
     flex-direction: row;
@@ -724,11 +724,12 @@ body{
 .project  div{
     overflow: hidden;
     border-radius: 1rem;
+    width: 614px;  /* Ensure the parent div has a fixed size */
 }
 
 .project-image {
     border-radius: 1rem; /* Equivalent to rounded-2xl */
-    width: 100%;
+    width: auto;
     height: auto;
     transition: 0.3s ease-in-out;
 }
@@ -746,7 +747,7 @@ body{
 /* Footer container styling */
 .footer-container {
     max-width: 100%;
-    background-color: #14355e;
+    background-color: #006644;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -807,7 +808,7 @@ body{
   .footer-button {
     padding: 10px 20px;
     background-color: #fcfdfe;
-    color: #14355e;
+    color: #006644;
     border: none;
     cursor: pointer;
     font-size: 14px;
@@ -816,7 +817,7 @@ body{
   }
   
   .footer-button:hover {
-    background-color: #14355e;
+    background-color: #006644;
     border:1px solid white;
     color:white;
   }
@@ -901,4 +902,192 @@ body{
 
 }
 
+
+
+/* carrer page */
+
+/* General Styles */
+.career-page {
+    padding: 2rem;
+  }
+  
+  
+  /* Job Cards Section */
+  .job-cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-items: center;
+    align-items: center; */
+    justify-content: center;
+    gap:5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .job-card {
+    background-color: #fff;
+    padding: 5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    line-height: 200%;
+    position: relative;
+    text-align: left;
+  }
+  
+  .badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 1.75rem;
+  }
+  
+  .job-title {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .job-description {
+    font-size: 2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .job-location,
+  .job-positions {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .apply-btn {
+    background-color: #006644;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .apply-btn:hover {
+    background-color: #004c33;
+  }
+  
+  /* Links Section */
+  .career-links {
+    display: flex;
+    justify-content: center;
+    gap:3rem;
+  }
+  
+  .link-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    width: 15%;
+    text-align: left;
+  }
+  
+  .link-card h4 {
+    font-size: 2.5rem;
+    text-decoration: underline;
+    color: #333;
+    margin-bottom: 1.25rem;
+  }
+  
+  .link-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.25rem;
+  }
+  
+  .link-card ul li {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .read-more-btn {
+    background-color: #006644;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #004c33;
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust padding for the career page */
+    .career-page {
+      padding: 1rem;
+    }
+  
+    /* Job Cards Section */
+    .job-cards {
+      flex-direction: column; /* Stack job cards vertically */
+      align-items: center;
+      gap: 2rem; /* Reduce gap between job cards */
+    }
+  
+    .job-card {
+      width: 90%; /* Make job cards take full width on mobile */
+      padding: 2rem 1rem; /* Adjust padding */
+    }
+  
+    .badge {
+      font-size: 1.5rem; /* Adjust size of the badge */
+    }
+  
+    .job-title {
+      font-size: 2rem; /* Adjust font size */
+    }
+  
+    .job-description,
+    .job-location,
+    .job-positions {
+      font-size: 1.5rem; /* Reduce font size */
+    }
+  
+    .apply-btn {
+      padding: 0.5rem 1rem; /* Adjust padding */
+      font-size: 1.2rem; /* Reduce font size */
+    }
+  
+    /* Links Section */
+    .career-links {
+      flex-direction: column; /* Stack links vertically */
+      gap: 2rem; /* Reduce gap between links */
+    }
+  
+    .link-card {
+      width: 90%; /* Make link cards take full width on mobile */
+      padding: 1rem; /* Adjust padding */
+    }
+  
+    .link-card h4 {
+      font-size: 2rem; /* Reduce heading font size */
+    }
+  
+    .link-card ul li {
+      font-size: 1.5rem; /* Adjust font size for list items */
+    }
+  
+    .read-more-btn {
+      font-size: 1.5rem; /* Adjust button font size */
+      padding: 0.5rem 1rem; /* Adjust padding */
+    }
+  }
+  
 

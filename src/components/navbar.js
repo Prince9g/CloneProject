@@ -17,7 +17,7 @@ export default function Navbar(props) {
     if (window.scrollY < 100) {
       navRef.current.style.backgroundColor = "transparent";
     } else {
-      navRef.current.style.backgroundColor = "#14355e";
+      navRef.current.style.backgroundColor = "#006644";
     }
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
   }
@@ -37,7 +37,7 @@ export default function Navbar(props) {
   const toggleNavbar = () => {
       setShowLinks(!showLinks);
       if(showLinks){
-        navRef.current.style.backgroundColor = "#14355e";
+        navRef.current.style.backgroundColor = "#006644";
       }
   };
   var style={textDecoration:"underline"};
@@ -51,7 +51,8 @@ export default function Navbar(props) {
       </div>
       <div className={`navbar-list ${showLinks ? "show" : ""}`}>
         <a className="list-item" style={style} onClick={()=> props.changePage('home')}>HOME</a>
-        <a className="list-item" onClick={()=> props.changePage('services')}>SERVICES</a>
+        <a className="list-item" onClick={()=> props.changePage('services')}>CAREER</a>
+        <a className="list-item" onClick={()=> props.changePage('events')}>EVENTS</a>
         <a className="list-item" onClick={()=> props.changePage('projects')}>PROJECTS</a>
         <a className="list-item" onClick={()=> props.changePage('about')}>ABOUT US</a>
         <a className="list-item" onClick={()=> props.changePage('brands')}>BRANDS</a>

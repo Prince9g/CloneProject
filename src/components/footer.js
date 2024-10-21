@@ -31,10 +31,10 @@ const Footer = () => {
             <h5>HEAD OFFICE</h5>
             <ul className="footer-nav">
               <li className="footer-item">
-                <p>Unit no 202-203, Suncity Business Tower, Near Sector 54 Chowk Metro Station, Gurugram - 122002</p>
+                <p>A-1020, 10TH FLOOR, TOWER-A, ATS BOUOUET, PLOT NO A212. SECTOR-132,NOIDA GAUTAM BUDDHA NAGAR U.P</p>
               </li>
               <li className="footer-item">
-                <a href="mailto:marketing@grandview.consulting" className="footer-link">marketing@grandview.consulting</a>
+                <a href="#" className="footer-link">+91 7428 063 567</a>
               </li>
             </ul>
           </div>
@@ -56,7 +56,7 @@ const Footer = () => {
 
           <div className="footer-column">
             <h5>Inquiries</h5>
-            <button className="footer-button">Subscribe</button>
+            <button className="footer-button">CONTACT</button>
           </div>
         </div>
       </footer>

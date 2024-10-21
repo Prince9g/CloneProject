@@ -10,23 +10,23 @@ const ProjectsPage = () => {
     <div className="container">
     <div class="grid-container">
         <div class="project">
-            <div><img src="https://static.wixstatic.com/media/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.png/v1/fill/w_614,h_461,q_90/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.webp" alt="image" class="project-image"/></div>
-            <div class="project-title">Godrej Vrikshya</div>
+            <div><img src="https://www.m3m-properties.co/cullinan/search/img/b1.jpg" alt="image" class="project-image"  style={{ width: '614px', height: '461px' }}/></div>
+            <div class="project-title">M3M THE CULLINAN</div>
         </div>
         <div class="project">
-            <div><img src="https://static.wixstatic.com/media/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.png/v1/fill/w_614,h_461,q_90/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.webp" alt="image" class="project-image"/></div>
-            <div class="project-title">Dlf Lux 5</div>
+            <div><img src="https://ace-terras.com/images/Terra-Brochure-4.jpg" alt="image" class="project-image" style={{ width: '614px', height: '461px' }}/></div>
+            <div class="project-title">ACE TERRA</div>
         </div>
         <div class="project">
-        <div><img src="https://static.wixstatic.com/media/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.png/v1/fill/w_614,h_461,q_90/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.webp" alt="image" class="project-image"/></div>
-            <div class="project-title">Tulip Monsella</div>
+        <div><img src="https://aceyxp.com/wp-content/uploads/2024/09/ace-yamuna-expressway-without-studio-temp-768x512.webp" alt="image" class="project-image" style={{ width: '614px', height: '461px' }}/></div>
+            <div class="project-title">ACE YXP</div>
         </div>
         <div class="project">
-        <div><img src="https://static.wixstatic.com/media/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.png/v1/fill/w_614,h_461,q_90/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.webp" alt="image" class="project-image"/></div>
-            <div class="project-title">Signature - Factor Sohna floors</div>
+        <div><img src="https://www.dlf.in/offices/images/banner/mobbanner/dlfcyberparkgurugram.webp" alt="image" class="project-image" style={{ width: '614px', height: '461px' }}/></div>
+            <div class="project-title">DLF</div>
         </div>
         <div class="project">
-        <div><img src="https://static.wixstatic.com/media/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.png/v1/fill/w_614,h_461,q_90/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.webp" alt="image" class="project-image"/></div>
+        <div><img src="https://static.wixstatic.com/media/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.png/v1/fill/w_614,h_461,q_90/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.webp" alt="image" class="project-image" width="614" height="461"/></div>
             <div class="project-title">Omaxe- the omaxe state dwarka</div>
         </div>
     </div>
