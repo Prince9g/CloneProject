@@ -1,8 +1,6 @@
 import React from 'react'
-import Navbar2 from './navbar2'
 import image from './image1.jpg'
-import './style/brandsPage.css'
-import './style/home.css'
+
 
 
 const numbers=[1,2,3,4,5,6,7,8,9,10,11,12]
@@ -15,7 +13,7 @@ const BrandsPage = () => {
     </div>
     <div className='Brandss'>
         {numbers.map((number, index)=>(
-            <img className="brand-image" src={image} key={index}/>
+            <img className="brand-image media-image-size" src={image} key={index}/>
         ))}
     </div>
     <div className='container'>

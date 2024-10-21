@@ -1,5 +1,5 @@
 import React from 'react'
-import './style/partners.css'
+
 import image from './image1.jpg'
 
 
@@ -16,7 +16,7 @@ function Partners() {
                 <img className="background" src="https://static.wixstatic.com/media/e0d270_1fe9d1f7b6924d0d8ea5fefa7250eb87~mv2.png/v1/fill/w_571,h_205,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e0d270_1fe9d1f7b6924d0d8ea5fefa7250eb87~mv2.png"/>
                 <div className='brands-scroll'>
                     {numbers.map((number, index)=>(
-                        <img className="brand-image" src={image} key={index}/>
+                        <img className="brand-image media-image-size" src={image} key={index}/>
                     ))}
                 </div>
             </div>

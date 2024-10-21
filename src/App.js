@@ -8,62 +8,26 @@ import ServicesPage from './components/services-page';
 import Navbar2 from './components/navbar2'
 import BrandsPage from './components/BrandsPage'
 import ProjectsPage from './components/Project-page';
-import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 function App() {
-  const BrowserRouter = createBrowserRouter([
-    {
-      path:'/',
-      element:<HomePage/>,
-    },
-    {
-      path:'/Y',
-      element:<Navbar2/>,
-      children:[
-        {
-          path:'/Yservices',
-          element:<ServicesPage/>
-        },
-        {
-          path:'/Y',
-          element:<Footer/>
-        },
-        {
-          path:'/Yprojects',
-          element:<ProjectsPage/>
-        },
-        {
-          path:'/Ybrands',
-          element:<BrandsPage/>
-        },
-        {
-          path:'/Yabout',
-          element:' '
-        }
-      ]
-    },
-    // {
-    //   path:'/login',
-    //   element:<Login/>
-    // },
-    // {
-    //   path:'/signup',
-    //   element:<Signup/>
-    // }
-  ])
   React.useEffect(()=>{
     Aos.init({duration:1000, once:true});
 },[])
+
+
+  const[page, setPage]=React.useState("home");
+  function changePage(newPage){
+    setPage(newPage);
+  }
   return (
-    // <div className="App">
-    //   {/* <HomePage/> */}
-    //   <Navbar2/>
-    //   {/* <ServicesPage/> */}
-    //   {/* <BrandsPage/> */}
-    //   <ProjectsPage/>
-    //   <Footer/>
-    // </div> 
-    <RouterProvider router={BrowserRouter}/>
+    <div className="App">
+      {page==="home"?<HomePage changePage={changePage}/>:<></>}
+      {page!=="home"?<Navbar2 changePage={changePage} underline={page}/>:<></>}
+      {page==="services"?<ServicesPage changePage={changePage}/>:<></>}
+      {page==="brands"?< BrandsPage changePage={changePage}/>:<></>}
+      {page==="projects"?<ProjectsPage changePage={changePage}/>:<></>}
+      <Footer/>
+    </div> 
   );
 }
 

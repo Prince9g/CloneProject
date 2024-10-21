@@ -2,7 +2,6 @@ import React from "react";
 import { PiHouseLight } from "react-icons/pi";
 import { FaDollarSign } from "react-icons/fa";
 import { IoBookOutline } from "react-icons/io5";
-import "./style/services.css";
 
 const style = { width: "100px", height: "100px" };
 const style2 = { color: "rgb(99,99,99)", fontSize: "16px" };
@@ -35,7 +34,7 @@ const Services = () => {
           data-aos-duration="500"
         >
           <div className="card media-width-100 media-height-fit">
-            <div className="icons">
+            <div className="icons media-image-size">
               <PiHouseLight style={style} />
             </div>
             <h2>REAL ESTATE</h2>

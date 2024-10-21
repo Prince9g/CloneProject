@@ -1,6 +1,5 @@
 import React, {useRef} from 'react'
-import './style/about.css'
-import './style/home.css'
+
 const About = () => {
     const arrowRef = useRef(null);
     var style={backgroundColor:"#14355e",  color:"white"}

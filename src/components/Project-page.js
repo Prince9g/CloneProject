@@ -1,13 +1,11 @@
 import React from 'react'
-import './style/project-page.css'
-// import './style/projects.css'
 
 const ProjectsPage = () => {
   return (
 <div>
     <div class="header">
-        <div class="header-text">OUR PROJECTS</div>
-        <div class="header-title">We Build Projects That Last</div>
+        <div class="header-text" data-aos="slide-right" data-aos-easing="ease-in-sine" data-aos-duration="500">OUR PROJECTS</div>
+        <div class="header-title" data-aos="slide-right" data-aos-easing="ease-in-sine" data-aos-duration="500">We Build Projects That Last</div>
     </div>
     <div className="container">
     <div class="grid-container">

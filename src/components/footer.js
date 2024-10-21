@@ -1,5 +1,5 @@
 import React from 'react';
-import './footer.css'; // Importing the custom CSS
+
 
 const Footer = () => {
   return (
@@ -31,7 +31,7 @@ const Footer = () => {
             <h5>HEAD OFFICE</h5>
             <ul className="footer-nav">
               <li className="footer-item">
-                Unit no 202-203, Suncity Business Tower, Near Sector 54 Chowk Metro Station, Gurugram - 122002
+                <p>Unit no 202-203, Suncity Business Tower, Near Sector 54 Chowk Metro Station, Gurugram - 122002</p>
               </li>
               <li className="footer-item">
                 <a href="mailto:marketing@grandview.consulting" className="footer-link">marketing@grandview.consulting</a>

@@ -1,5 +1,5 @@
 import React from 'react'
-import './style/numbers.css'
+
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 

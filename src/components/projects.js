@@ -1,5 +1,5 @@
 import React, {useRef} from 'react'
-import './style/projects.css'
+
 
 const Projects = () => {
     const arrowRef = useRef(null);
@@ -24,7 +24,7 @@ const Projects = () => {
         </div>
        <div className="projects-images ">
         <div className="images-slider ">
-            <div className="image media-width-100">
+            <div className="image">
                 <a><img src="https://static.wixstatic.com/media/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.png/v1/fill/w_614,h_461,q_90/e0d270_3e70ee46b17b41bca9a2c36f17ad781c~mv2.webp"></img></a>
                 <div className="button-hover">
                     <div>

@@ -8,17 +8,16 @@ import Projects  from './projects';
 import Services from'./services';
 import Footer from './footer';
 
-const HomePage = () => {
+const HomePage = (props) => {
   return (
     <>
-      <Navbar/> 
-      <Home/>
-      <Partners/>
-      <About/>
-      <Numbers/>
-      <Projects/>
-      <Services/>
-      <Footer/>
+      <Navbar changePage={props.changePage}/> 
+      <Home changePage={props.changePage}/>
+      <Partners changePage={props.changePage}/>
+      <About changePage={props.changePage}/>
+      <Numbers changePage={props.changePage}/>
+      <Projects changePage={props.changePage}/>
+      <Services changePage={props.changePage}/>
     </>
   )
 }
